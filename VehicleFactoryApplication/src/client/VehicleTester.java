@@ -509,16 +509,7 @@ public class VehicleTester {
 		}while(!exit1);
 		
 		
-		//long startTime = System.nanoTime();    
-		/*long createdMillis = System.currentTimeMillis();
-		// ... the code being measured ...   
-		System.out.println("press enter to start to count");
-		//scan.nextLine();
-		scan.nextLine();
-		//long estimatedTime = System.nanoTime() - startTime;
-		 long nowMillis = System.currentTimeMillis();
-		 long seconds=(nowMillis - createdMillis) / 1000;
-		System.out.println("time passed:"+seconds);*/
+	
 
 	}
 
