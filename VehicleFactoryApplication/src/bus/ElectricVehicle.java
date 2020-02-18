@@ -5,30 +5,7 @@ import java.util.Scanner;
 
 public class ElectricVehicle extends Vehicle {
 	private float kilowatts;
-	public float calculateKilowatt(float price,long seconds)
-	{
-		
-		Random read=new Random();
-		if(price>=200000)
-		{
-			
-			float number=(float) (read.nextFloat()*1.79+0.2);	//0.20-1.99	
-			System.out.println("the kilowatt per second for your car of this run is "+number+" kilowatts");	
-			 return number*seconds;
-		}
-		if(price>=100000&&price<200000)
-		{
-			float number=(float) (read.nextFloat()*1.99+2);		//2.00-3.99	
-			System.out.println("the kilowatt per second for your car of this run is "+number+" kilowatts");	
-			 return number*seconds;
-		}
-		else
-		{
-			float number=(float) (read.nextFloat()*2.99+4);		//4.00-6.99			
-			System.out.println("the kilowatt per second for your car of this run is "+number+" kilowatts");	
-			 return number*seconds;
-		}
-	}
+	
 	public void setKilowatts(float value)
 	{
 		this.kilowatts=value;
