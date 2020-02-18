@@ -24,20 +24,7 @@ public class ElectricVehicle extends Vehicle {
 		super(id,make,model,count,date,type,p,time);
 		this.kilowatts=kilowatt;
 	}
-	public void makeTrip()
-	{
-		this.counter=100;
-		this.kilowatts=4.44f;//f means float, limit to 6 digits
-		long time = System.currentTimeMillis();
-		Scanner scan = new Scanner(System.in);
-		//Random read=new Random();
-		System.out.println("press enter to start to run the car");		
-		scan.nextLine();
-		 long nowMillis = System.currentTimeMillis();
-		 long seconds=(nowMillis - time) / 1000;
-		 setSecond(seconds);
-		
-	}
+	
 	public float getMilesPerGallon()
 	{
 		return this.counter/this.kilowatts;
